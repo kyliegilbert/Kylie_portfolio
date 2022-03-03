@@ -118,11 +118,10 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-   
     align-items: flex-start;
-    
     border-left: 5px solid var(--dark-green);
-  }
+}
+
 .component-info-work .work-big-box{
     width: 100%;
     display: flex;
@@ -133,44 +132,99 @@ h2 {
     min-width: 100%;
     justify-content: space-between;
 }
+
 .component-info-work .work-small-boxes div{
     min-width: 49.5%;
 }
 
-
 .figure {
-        height: 200px;
-        min-width: 100%;
-        margin-bottom: 5px;
-        background-image: url("../images/Beach2.PNG");
-        background-size: cover;
-        background-position: center;
-        border: 5px solid var(--dark-pink);
-    
-}
-
-
-.figure-half {
+    position: relative;
     height: 200px;
     min-width: 100%;
     margin-bottom: 5px;
     background-image: url("../images/Beach2.PNG");
     background-size: cover;
     background-position: center;
-    border: 5px solid var(--dark-pink); 
+    border: 5px solid var(--dark-pink);  
+}
+
+.box-heading {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    background-color: var(--dark-pink);
+    border: 2px solid var(--dark-pink);
+    text-align: center;
+}
+
+.box-heading h3 {
+    color: var(--dark-green);
+    text-align: center;
+}
+
+.component .box-heading a {
+    color: var(--dark-green);
+    text-decoration: underline;
+}
+
+.component .box-heading a:hover {
+
+    background-color: var(--dark-green);
+    color: var(--dark-pink);
+}
+
+.figure-half {
+    position: relative;
+    height: 200px;
+    min-width: 100%;
+    margin-bottom: 5px;
+    background-image: url("../images/Beach2.PNG");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--dark-pink);
+    color: var(--dark-pink); 
+}
+
+.box-heading-half {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    background-color: var(--dark-pink);
+    border: 2px solid var(--dark-pink);
+}
+
+.box-heading-half h3 {
+    color: var(--dark-green);
+    text-align: center;
+}
+
+.component .box-heading-half a {
+    color: var(--dark-green);
+    text-align: center;
+    text-decoration: underline;
 }
 
 .component a {
     background-color: unset;
     color: var(--dark-pink);
-    font-weight: bold;
     text-decoration: none;
-  }
+}
+
+.component .box-heading-half a:hover {
+
+    background-color: var(--dark-green);
+    color: var(--dark-pink);
+}
 .component nav a:hover {
     background-color: var(--dark-pink);
     color: var(--light-green);
     padding: 5%;
-  }
+}
 
 @media screen and (max-width: 768px) {
     header {
@@ -198,6 +252,13 @@ h2 {
     }
     .component-info-work .work-small-boxes div{
         min-width: 100%;
+    }
+    .box-heading {
+        width: 100%;
+    }
+    .box-heading-half {
+        width: 20%;
+        /*height: 30%;*/
     }
 
 }
