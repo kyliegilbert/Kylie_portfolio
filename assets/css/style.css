@@ -158,7 +158,7 @@ h2 {
     height: 200px;
     min-width: 100%;
     margin-bottom: 5px;
-    background-image: url("../images/background.jpeg");
+    background-image: url("../images/Rainbow-cake-1.png");
     background-size: cover;
     background-position: center;
     border: 5px solid var(--dark-pink);  
@@ -207,11 +207,28 @@ h2 {
     height: 200px;
     min-width: 100%;
     margin-bottom: 5px;
+    border: 5px solid var(--dark-pink);
+    color: var(--dark-pink); 
+}
+.bg-image-1 {
+    background-image: url("../images/background.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-2 {
+    background-image: url("../images/ecommerce-pic.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-3 {
+    background-image: url("../images/blog.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-4 {
     background-image: url("../images/weatherimage.jpeg");
     background-size: cover;
     background-position: center;
-    border: 5px solid var(--dark-pink);
-    color: var(--dark-pink); 
 }
 .box-heading-half {
     position: absolute;
